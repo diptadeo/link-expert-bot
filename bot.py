@@ -11,7 +11,7 @@ import re
 from uuid import uuid4
 
 
-Api_key=os.environ.get("api_key","")
+Api_key=os.environ.get("api_key","60dd773f788db5c25193791a8c75015fee1c1b96")
 s=pyshorteners.Shortener(api_key=Api_key)
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -77,7 +77,7 @@ def donate(update,context):
 
 
 def main():
-    token=os.environ.get("bot_token","")
+    token=os.environ.get("bot_token","7014307581:AAGQNfJRbzef_NRoB0dfeovQkABgRgetuxc")
     updater = Updater(token,use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start',start))
